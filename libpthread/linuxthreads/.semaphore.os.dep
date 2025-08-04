@@ -1,0 +1,148 @@
+libpthread/linuxthreads/semaphore.os: libpthread/linuxthreads/semaphore.c \
+ include/libc-symbols.h include/bits/uClibc_arch_features.h \
+ include/features.h include/bits/uClibc_config.h include/sys/cdefs.h \
+ include/libc-internal.h include/limits.h \
+ /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/limits.h \
+ include/bits/posix1_lim.h include/bits/local_lim.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/limits.h \
+ include/bits/uClibc_local_lim.h include/bits/posix2_lim.h \
+ include/bits/xopen_lim.h include/bits/stdio_lim.h include/errno.h \
+ include/bits/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno-base.h \
+ include/pthread.h include/sched.h include/bits/types.h \
+ include/bits/wordsize.h include/bits/kernel_types.h \
+ include/bits/typesizes.h \
+ /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/stddef.h \
+ include/time.h include/bits/sched.h include/stdlib.h \
+ include/bits/waitflags.h include/bits/waitstatus.h include/endian.h \
+ include/bits/endian.h include/stdint.h include/bits/wchar.h \
+ include/byteswap.h include/bits/byteswap.h \
+ include/bits/byteswap-common.h include/bits/byteswap-16.h \
+ include/sys/types.h include/sys/select.h include/bits/select.h \
+ include/bits/sigset.h include/bits/time.h include/sys/sysmacros.h \
+ include/bits/pthreadtypes.h include/alloca.h include/bits/stackinfo.h \
+ include/bits/uClibc_clk_tck.h include/signal.h include/bits/signum.h \
+ include/bits/siginfo.h include/bits/sigaction.h \
+ include/bits/sigcontext.h include/bits/sigstack.h include/sys/ucontext.h \
+ include/bits/sigthread.h include/string.h include/bits/initspin.h \
+ libpthread/linuxthreads/semaphore.h libpthread/linuxthreads/internals.h \
+ libpthread/linuxthreads/sysdeps/pthread/bits/libc-tsd.h \
+ libpthread/linuxthreads/internals.h \
+ libpthread/linuxthreads/sysdeps/pthread/bits/libc-lock.h \
+ include/setjmp.h include/bits/setjmp.h include/bits/jmp_buf_tag.h \
+ include/unistd.h include/bits/posix_opt.h \
+ include/bits/uClibc_posix_opt.h include/bits/environments.h \
+ include/bits/confname.h include/bits/getopt.h include/sys/wait.h \
+ libpthread/linuxthreads/sysdeps/riscv32/pt-machine.h \
+ libpthread/linuxthreads/../linuxthreads_db/thread_dbP.h \
+ libpthread/linuxthreads/../linuxthreads_db/proc_service.h \
+ include/sys/procfs.h include/sys/time.h include/sys/user.h \
+ libpthread/linuxthreads/../linuxthreads_db/thread_db.h \
+ libpthread/linuxthreads/internals.h libpthread/linuxthreads/spinlock.h \
+ libpthread/linuxthreads/restart.h include/sys/syscall.h \
+ include/bits/sysnum.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/unistd.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/unistd.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/bitsperlong.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/bitsperlong.h \
+ include/bits/syscalls.h include/bits/syscalls-common.h \
+ libpthread/linuxthreads/queue.h
+include/libc-symbols.h:
+include/bits/uClibc_arch_features.h:
+include/features.h:
+include/bits/uClibc_config.h:
+include/sys/cdefs.h:
+include/libc-internal.h:
+include/limits.h:
+/opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/limits.h:
+include/bits/posix1_lim.h:
+include/bits/local_lim.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/limits.h:
+include/bits/uClibc_local_lim.h:
+include/bits/posix2_lim.h:
+include/bits/xopen_lim.h:
+include/bits/stdio_lim.h:
+include/errno.h:
+include/bits/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno-base.h:
+include/pthread.h:
+include/sched.h:
+include/bits/types.h:
+include/bits/wordsize.h:
+include/bits/kernel_types.h:
+include/bits/typesizes.h:
+/opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/stddef.h:
+include/time.h:
+include/bits/sched.h:
+include/stdlib.h:
+include/bits/waitflags.h:
+include/bits/waitstatus.h:
+include/endian.h:
+include/bits/endian.h:
+include/stdint.h:
+include/bits/wchar.h:
+include/byteswap.h:
+include/bits/byteswap.h:
+include/bits/byteswap-common.h:
+include/bits/byteswap-16.h:
+include/sys/types.h:
+include/sys/select.h:
+include/bits/select.h:
+include/bits/sigset.h:
+include/bits/time.h:
+include/sys/sysmacros.h:
+include/bits/pthreadtypes.h:
+include/alloca.h:
+include/bits/stackinfo.h:
+include/bits/uClibc_clk_tck.h:
+include/signal.h:
+include/bits/signum.h:
+include/bits/siginfo.h:
+include/bits/sigaction.h:
+include/bits/sigcontext.h:
+include/bits/sigstack.h:
+include/sys/ucontext.h:
+include/bits/sigthread.h:
+include/string.h:
+include/bits/initspin.h:
+libpthread/linuxthreads/semaphore.h:
+libpthread/linuxthreads/internals.h:
+libpthread/linuxthreads/sysdeps/pthread/bits/libc-tsd.h:
+libpthread/linuxthreads/internals.h:
+libpthread/linuxthreads/sysdeps/pthread/bits/libc-lock.h:
+include/setjmp.h:
+include/bits/setjmp.h:
+include/bits/jmp_buf_tag.h:
+include/unistd.h:
+include/bits/posix_opt.h:
+include/bits/uClibc_posix_opt.h:
+include/bits/environments.h:
+include/bits/confname.h:
+include/bits/getopt.h:
+include/sys/wait.h:
+libpthread/linuxthreads/sysdeps/riscv32/pt-machine.h:
+libpthread/linuxthreads/../linuxthreads_db/thread_dbP.h:
+libpthread/linuxthreads/../linuxthreads_db/proc_service.h:
+include/sys/procfs.h:
+include/sys/time.h:
+include/sys/user.h:
+libpthread/linuxthreads/../linuxthreads_db/thread_db.h:
+libpthread/linuxthreads/internals.h:
+libpthread/linuxthreads/spinlock.h:
+libpthread/linuxthreads/restart.h:
+include/sys/syscall.h:
+include/bits/sysnum.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/unistd.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/unistd.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/bitsperlong.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/bitsperlong.h:
+include/bits/syscalls.h:
+include/bits/syscalls-common.h:
+libpthread/linuxthreads/queue.h:
+cmd_libpthread_linuxthreads_semaphore.os := riscv32-linux-uclibc-gcc -c libpthread/linuxthreads/semaphore.c -o libpthread/linuxthreads/semaphore.os -Wall -Wstrict-prototypes -Wstrict-aliasing -Wno-nonnull-compare -funsigned-char -fno-builtin -fcommon -fno-asm -fmerge-all-constants -std=gnu99 -fno-stack-protector -nostdinc -Iinclude -Iinclude -include libc-symbols.h -Ilibc/sysdeps/linux/riscv32 -Ilibc/sysdeps/linux/riscv32 -Ilibc/sysdeps/linux -Ildso/ldso/riscv32 -Ildso/include -I. -DSTATIC -Os -fstrict-aliasing -I/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include -nostdlib -D__UCLIBC_HAVE_STATX__ -Ilibpthread/linuxthreads/sysdeps/unix/sysv/linux/riscv32 -Ilibpthread/linuxthreads/sysdeps/riscv32 -Ilibpthread/linuxthreads/sysdeps/unix/sysv/linux -Ilibpthread/linuxthreads/sysdeps/pthread -Ilibpthread/linuxthreads -Ilibpthread -Ilibc/sysdeps/linux/common -isystem /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include-fixed -isystem /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include -I/ -DNDEBUG -DNOT_IN_libc -DIS_IN_libpthread -DIN_LIB=libpthread -fPIC -MT libpthread/linuxthreads/semaphore.os -MD -MP -MF libpthread/linuxthreads/.semaphore.os.dep

@@ -1,0 +1,60 @@
+librt/clock_gettime.os: librt/clock_gettime.c include/libc-symbols.h \
+ include/bits/uClibc_arch_features.h include/errno.h include/features.h \
+ include/bits/uClibc_config.h include/sys/cdefs.h include/libc-internal.h \
+ include/bits/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno-base.h \
+ libc/sysdeps/linux/riscv32/sysdep.h libc/sysdeps/linux/common/sysdep.h \
+ include/sys/syscall.h include/bits/sysnum.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/unistd.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/unistd.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/bitsperlong.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/bitsperlong.h \
+ include/bits/syscalls.h include/bits/syscalls-common.h include/time.h \
+ /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/stddef.h \
+ include/bits/time.h include/bits/uClibc_clk_tck.h include/bits/types.h \
+ include/bits/wordsize.h include/bits/kernel_types.h \
+ include/bits/typesizes.h include/sys/time.h include/sys/select.h \
+ include/bits/select.h include/bits/sigset.h \
+ librt/kernel-posix-cpu-timers.h include/internal/time64_helpers.h \
+ /opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/version.h
+include/libc-symbols.h:
+include/bits/uClibc_arch_features.h:
+include/errno.h:
+include/features.h:
+include/bits/uClibc_config.h:
+include/sys/cdefs.h:
+include/libc-internal.h:
+include/bits/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/errno-base.h:
+libc/sysdeps/linux/riscv32/sysdep.h:
+libc/sysdeps/linux/common/sysdep.h:
+include/sys/syscall.h:
+include/bits/sysnum.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/unistd.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/unistd.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm/bitsperlong.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/asm-generic/bitsperlong.h:
+include/bits/syscalls.h:
+include/bits/syscalls-common.h:
+include/time.h:
+/opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include/stddef.h:
+include/bits/time.h:
+include/bits/uClibc_clk_tck.h:
+include/bits/types.h:
+include/bits/wordsize.h:
+include/bits/kernel_types.h:
+include/bits/typesizes.h:
+include/sys/time.h:
+include/sys/select.h:
+include/bits/select.h:
+include/bits/sigset.h:
+librt/kernel-posix-cpu-timers.h:
+include/internal/time64_helpers.h:
+/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include/linux/version.h:
+cmd_librt_clock_gettime.os := riscv32-linux-uclibc-gcc -c librt/clock_gettime.c -o librt/clock_gettime.os -Wall -Wstrict-prototypes -Wstrict-aliasing -Wno-nonnull-compare -funsigned-char -fno-builtin -fcommon -fno-asm -fmerge-all-constants -std=gnu99 -fno-stack-protector -nostdinc -Iinclude -Iinclude -include libc-symbols.h -Ilibc/sysdeps/linux/riscv32 -Ilibc/sysdeps/linux/riscv32 -Ilibc/sysdeps/linux -Ildso/ldso/riscv32 -Ildso/include -I. -DSTATIC -Os -fstrict-aliasing -I/opt/cross/riscv32-linux-uclibc/riscv32-linux-uclibc/include -nostdlib -D__UCLIBC_HAVE_STATX__ -Ilibpthread/linuxthreads/sysdeps/unix/sysv/linux/riscv32 -Ilibpthread/linuxthreads/sysdeps/riscv32 -Ilibpthread/linuxthreads/sysdeps/unix/sysv/linux -Ilibpthread/linuxthreads/sysdeps/pthread -Ilibpthread/linuxthreads -Ilibpthread -Ilibc/sysdeps/linux/common -isystem /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include-fixed -isystem /opt/cross/riscv32-linux-uclibc/lib/gcc/riscv32-linux-uclibc/15.1.0/include -I/ -DNDEBUG -DNOT_IN_libc -DIS_IN_librt -DIN_LIB=librt -fPIC -MT librt/clock_gettime.os -MD -MP -MF librt/.clock_gettime.os.dep
