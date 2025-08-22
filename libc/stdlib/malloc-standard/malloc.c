@@ -390,10 +390,8 @@ static void* __malloc_alloc(size_t nb, mstate av)
        rather than expanding top.
        */
 
-//    if ((unsigned long)(nb) >= (unsigned long)(av->mmap_threshold) &&
-//	    (av->n_mmaps < av->n_mmaps_max)) {
-
-      if (0) {
+    if ((unsigned long)(nb) >= (unsigned long)(av->mmap_threshold) &&
+	    (av->n_mmaps < av->n_mmaps_max)) {
 	char* mm;             /* return value from mmap call*/
 
 	/*
